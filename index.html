@@ -11,9 +11,7 @@
 
     <!-- Bootstrap -->
     <link href="venezia_files/bootstrap.css" rel="stylesheet">
-
     <link href="venezia_files/bootstrap-theme.css" rel="stylesheet">
-
     <link href="venezia_files/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,16 +22,9 @@
     <![endif]-->
 
     <script type="text/javascript" src="venezia_files/jquery_002.js"></script>
-<script type="text/javascript" src="venezia_files/jquery-migrate.js"></script>
-
+    <script type="text/javascript" src="venezia_files/jquery-migrate.js"></script>
     <script src="venezia_files/bootstrap.js"></script>
-
     <script src="venezia_files/jquery.js"></script>
-
-
-    
-
-
 
   </head>
   <body data-gr-c-s-loaded="true">
@@ -44,7 +35,6 @@
             <div id="logo">
               <img src="venezia_files/pug_logo_bg_violet.jpg">
             </div>
-            <h1>We are developing new site! Stay tuned!</h1>
             <div id="content">
                           </div>
             
@@ -54,43 +44,7 @@
 
         <div class="row">
         
-<script>
-/*
-        Subscription form
-    */
-jQuery(function ($) {
-    $('.success-message').hide();
-    $('.error-message').hide();
-
-    ajax_url = "http://venezia.grusp.org/wp-admin/admin-ajax.php";
-
-    $('.mm-form').submit(function() {
-        var postdata = $('.mm-form').serialize();
-        $.ajax({
-            type: 'POST',
-            url: ajax_url + '?action=wpmmp_c_soon_store_email',
-            data: postdata,
-            dataType: 'json',
-            success: function(json) {
-                if(json.valid == 0) {
-                    $('.success-message').hide();
-                    $('.error-message').hide();
-                    $('.error-message').html(json.message);
-                    $('.error-message').fadeIn();
-                }
-                else {
-                    $('.error-message').hide();
-                    $('.success-message').hide();
-                    $('.subscribe form').hide();
-                    $('.success-message').html(json.message);
-                    $('.success-message').fadeIn();
-                }
-            }
-        });
-        return false;
-    });
-});
-</script>              <span>
+        <span>
 
 		<span>
 
